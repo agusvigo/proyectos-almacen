@@ -1,0 +1,323 @@
+/*----------------------------------------------Cargamos las fuentes externas------------------------------------*/
+@font-face{
+    font-family: roboto;
+    src:url(../assets/fonts/Roboto-Regular.ttf);
+    /*formato tff para navegadores CS3*/
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------Estilos generales----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+/*--Creamos variables--*/
+:root{
+    --color_1:rgb(62, 138, 119);
+    --font_body:rgb(247, 248, 242);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: roboto,'Courier New', Courier, monospace;
+    background-color: var(--color_1);
+    background-image: url("../assets/pictures/almacen.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: var(--font_body);
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------Encabezado------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+header{
+    margin: 0;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    min-height: 80px;
+    background-color: aqua;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+header nav{
+    height: auto;
+}
+header ul{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+}
+h1 { 
+    color: rgb(7, 71, 59);
+}
+li{
+    padding: 4px;
+    border-radius: 15px;
+    margin: 0 1px;
+    width: 178px;
+    text-align: center;
+    background: #5EC8D0;
+    background: -moz-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: -webkit-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: radial-gradient(ellipse at center, #5EC8D0 0%, #277AA0 100%);
+}
+li:hover{
+    background: #58bece;
+    background: -moz-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: -webkit-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: radial-gradient(ellipse at center, #58bece 0%, #236a8b 100%);
+    }
+a:link {
+    color: rgb(7, 71, 59);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(7, 71, 59);;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------Contenido-------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.div_titulo_form{
+    margin: 20px 0;
+}
+.div_contenido{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.div_contenido h2{
+    text-align: center;
+}
+.div_contenido h3{
+    margin: 0 auto;
+}
+.div_cont_form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+	justify-content: space-between;
+}
+.div_menu_form{
+    padding-left: 40px;
+    width:20%;
+    min-width: 240px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.div_menu_form>nav>ul{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+    list-style: none;
+}
+.div_menu_form>nav>ul>li{
+    margin: 5px 0;
+}
+.div_menu_form>nav>ul>li>a{
+    color: var(--font_body);
+}
+.div_form{
+    width: 80%;
+    min-width: 550px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.div_formulario{
+    width: 450px;
+}
+.div_formulario fieldset{
+    border: 2px double var(--font_body);
+    border-radius: 5px;
+}
+#div_fieldset{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.div_label{
+    display: inline-block;
+    width: 40%;
+    padding-left: 20px;
+    margin: 5px 0 5px 0;
+}
+.div_input_text{
+    display: inline-block;
+    width: 50%;
+    margin: 5px 0 5px 0;
+}
+.div_input_text_disabled{
+    display: inline-block;
+    width: 50%;
+    margin: 5px 0 5px 0;
+
+}
+.div_input_text > input{
+    border-style: none;
+    border-radius: 3px;
+    text-align: center;
+    background-color: white;
+}
+.div_input_text_disabled > input{
+    border-style: none;
+    border-radius: 3px;
+    text-align: center;
+    background-color: greenyellow;;
+}
+.div_input_text > select{
+    border-style: none;
+    border-radius: 3px;
+    text-align: center;
+    background-color: white;
+    height: 19px;
+}
+.div_boton{
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+.div_boton > input{
+    border-style: none;
+    margin-left: 160px;
+    padding: 4px;
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
+    background: #5EC8D0;
+    background: -moz-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: -webkit-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: radial-gradient(ellipse at center, #5EC8D0 0%, #277AA0 100%);
+    color: var(--font_body);
+}
+.div_boton_doble{
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+.div_boton_doble > input{
+    border-style: none;
+    margin-left: 100px;
+    padding: 4px;
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
+    background: #5EC8D0;
+    background: -moz-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: -webkit-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: radial-gradient(ellipse at center, #5EC8D0 0%, #277AA0 100%);
+    color: var(--font_body);
+}
+.div_boton_2{
+    position: relative;
+    top: -35px;
+    left: 250px;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+.div_boton_2 > input{
+    border-style: none;
+    padding: 4px;
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
+    background: #5EC8D0;
+    background: -moz-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: -webkit-radial-gradient(center, #5EC8D0 0%, #277AA0 100%);
+    background: radial-gradient(ellipse at center, #5EC8D0 0%, #277AA0 100%);
+    color: var(--font_body);
+}
+#accion{
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+.div_boton > input:hover{
+    background: #58bece;
+    background: -moz-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: -webkit-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: radial-gradient(ellipse at center, #58bece 0%, #236a8b 100%);
+    cursor: pointer;
+}
+.div_boton_doble > input:hover{
+    background: #58bece;
+    background: -moz-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: -webkit-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: radial-gradient(ellipse at center, #58bece 0%, #236a8b 100%);
+    cursor: pointer;
+}
+.div_boton_2 > input:hover{
+    background: #58bece;
+    background: -moz-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: -webkit-radial-gradient(center, #58bece 0%, #236a8b 100%);
+    background: radial-gradient(ellipse at center, #58bece 0%, #236a8b 100%);
+    cursor: pointer;
+}
+/*------------------------------------------------------Resultados----------------------------------------------*/
+
+#message{
+    text-align: center;
+}
+.div_resultado{
+    min-width: 571px;
+    margin-top: 30px;
+}
+.div_resultado > h4{
+    text-align: center;
+}
+.form_descripcion{
+    text-align: center;
+    display: inline-block;
+    width: 19%;
+    border: 2px double var(--font_body);
+    border-radius: 5px;
+}
+.form_contenido{
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    border: 2px double var(--font_body);
+    border-radius: 5px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------Pie de página------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+footer{
+    margin: 0;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 20px;
+    background-color: aqua;
+}
+footer > div {
+    text-align: center;
+    margin: 0 auto;
+}
